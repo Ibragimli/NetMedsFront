@@ -1,0 +1,220 @@
+@media only screen and (max-width: 1095px) {
+    header {
+        .container-fluid {
+            .row {
+                .headLogo {
+                    .headerLogoImage {
+                        width: 168px;
+
+                        img {
+                            width: 100%;
+                        }
+
+                    }
+                }
+
+                .headSearch {
+                    form {
+
+                        .input-group {
+
+                            button {
+                                width: 150px !important;
+                            }
+
+                            input {
+                                width: 320px !important;
+                            }
+                        }
+                    }
+                }
+
+                .headUser {
+
+
+                    ul {
+
+                        li {
+                            a {
+
+                                img {}
+
+                                span {}
+
+                                span:hover {}
+
+                                .basketImage {}
+
+                                .basketCart {}
+                            }
+                        }
+
+                        .signInUp {
+
+                            img {}
+
+                            ul {
+                                li {
+
+
+                                    a {
+                                        span {}
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .headNavbar {
+
+        .container {
+
+            .navbar {
+                .collapse {
+                    top: 60px;
+
+                    .navbar-nav {
+
+                        .nav-item {
+                            margin-bottom: 20px;
+
+                            a {
+                                color: gray !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+
+        .container-fluid {
+            .footUp {
+                text-align: center;
+
+                p {
+                    margin-left: 0px !important;
+                }
+            }
+
+            .footSubscribe {
+                h2 {
+                    margin-top: 20px;
+                }
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1095px) {
+    header {
+        .container-fluid {
+            .row {
+
+                .headSearch {
+                    form {
+
+                        .input-group {
+                            margin-left: 5px !important;
+                            button {
+                                width: 70px !important;
+                            }
+
+                            input {
+                                width: 250px !important;
+                            }
+                            ::placeholder {
+                                padding-left: 100px;
+                                font-family: 'Lato', sans-serif;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .headUser {
+
+
+                    ul {
+
+                        li {
+                            a {
+
+                                img {}
+
+                                span {}
+
+                                span:hover {}
+
+                                .basketImage {}
+
+                                .basketCart {}
+                            }
+                        }
+
+                        .signInUp {
+
+                            img {}
+
+                            ul {
+                                li {
+
+
+                                    a {
+                                        span {}
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 561px) {
+    footer {
+        .container-fluid {
+            .copyRight {
+                ul {
+                    flex-direction: column;
+                    display: flex;
+                    margin-bottom: 50px;
+
+                    li {
+
+                        a {
+                            color: rgba(11, 18, 25, .5);
+                            line-height: 40px !important;
+                        }
+
+                        p {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}
