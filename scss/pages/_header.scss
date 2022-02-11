@@ -16,8 +16,7 @@ header {
             .headLogo {
                 display: flex;
                 align-items: center;
-
-                img {}
+                justify-content: center;
             }
 
             .headSearch {
@@ -176,8 +175,12 @@ header {
                         margin-left: 10px;
 
                         a {
+                            i{
+                                color: white;
+                                padding-right: 5px;
+                            }
                             display: flex;
-
+                            align-items: center;
                             img {
                                 margin-right: 8px;
                                 margin-left: 15px;
@@ -198,9 +201,6 @@ header {
 
                             .basketImage {
                                 position: relative;
-
-
-
                                 sub {
                                     display: flex;
                                     align-items: center;

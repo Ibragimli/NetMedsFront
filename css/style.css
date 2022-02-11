@@ -219,6 +219,9 @@ header .container-fluid .row .headLogo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .container-fluid .row .headSearch form {
@@ -416,6 +419,14 @@ header .container-fluid .row .headUser ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container-fluid .row .headUser ul li a i {
+  color: white;
+  padding-right: 5px;
 }
 
 header .container-fluid .row .headUser ul li a img {
@@ -554,105 +565,32 @@ table {
 }
 
 @media only screen and (max-width: 1095px) {
-  header .container-fluid .row .headLogo .headerLogoImage {
-    width: 168px;
+  header {
+    height: 140px !important;
+  }
+  header .container-fluid .row {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   header .container-fluid .row .headLogo .headerLogoImage img {
-    width: 100%;
+    padding-right: 15px !important;
+    width: 100% !important;
+    height: 50px !important;
   }
-  header .container-fluid .row .headSearch form .input-group button {
-    width: 150px !important;
-  }
-  header .container-fluid .row .headSearch form .input-group input {
-    width: 40% !important;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .headNavbar .container .navbar .collapse {
-    top: 60px;
-  }
-  .headNavbar .container .navbar .collapse .navbar-nav .nav-item {
-    margin-bottom: 20px;
-  }
-  .headNavbar .container .navbar .collapse .navbar-nav .nav-item a {
-    color: gray !important;
-  }
-  footer {
-    text-align: center;
-  }
-  footer .container-fluid .footUp {
-    text-align: center;
-  }
-  footer .container-fluid .footUp p {
-    margin-left: 0px !important;
-  }
-  footer .container-fluid .footSubscribe {
+  header .container-fluid .row .headUser {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100% !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer .container-fluid .footSubscribe h2 {
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 776px) {
-  header .container-fluid .row .headSearch form .input-group {
-    margin-left: 5px !important;
-  }
-  header .container-fluid .row .headSearch form .input-group button {
-    width: 70px !important;
-  }
-  header .container-fluid .row .headSearch form .input-group input {
-    width: 20% !important;
-  }
-  header .container-fluid .row .headSearch form .input-group ::-webkit-input-placeholder {
-    padding-left: 100px;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-  }
-  header .container-fluid .row .headSearch form .input-group :-ms-input-placeholder {
-    padding-left: 100px;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-  }
-  header .container-fluid .row .headSearch form .input-group ::-ms-input-placeholder {
-    padding-left: 100px;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-  }
-  header .container-fluid .row .headSearch form .input-group ::placeholder {
-    padding-left: 100px;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 561px) {
-  footer .container-fluid .copyRight ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 50px;
-  }
-  footer .container-fluid .copyRight ul li a {
-    color: rgba(11, 18, 25, 0.5);
-    line-height: 40px !important;
-  }
-  footer .container-fluid .copyRight ul li p {
-    margin-top: 10px;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
 }
 
