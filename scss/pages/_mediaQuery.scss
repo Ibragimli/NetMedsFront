@@ -23,7 +23,7 @@
                             }
 
                             input {
-                                width: 320px !important;
+                                width: 40% !important;
                             }
                         }
                     }
@@ -121,7 +121,7 @@
     }
 }
 
-@media only screen and (max-width: 1095px) {
+@media only screen and (max-width: 776px) {
     header {
         .container-fluid {
             .row {
@@ -136,7 +136,7 @@
                             }
 
                             input {
-                                width: 250px !important;
+                                width: 20% !important;
                             }
                             ::placeholder {
                                 padding-left: 100px;
