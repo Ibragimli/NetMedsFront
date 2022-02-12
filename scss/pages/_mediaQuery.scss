@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1095px) {
     header {
-        height: 140px !important;
+        height: 145px !important;
         
         .container-fluid {
             .row {
@@ -17,10 +17,28 @@
                 }
                 .headUser {
                     padding-top: 20px;
-                    padding-bottom: 10px;
+                    padding-bottom: 15px;
                     width: 100% !important;
                     display: flex;
                     justify-content: center !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #basket {
+        .container {
+            h1 {
+               text-align: center !important;
+            }
+            .products {
+                justify-content: center !important; 
+               
+                .payment {
+                    width: 400px !important;
+                    margin-left: 0px !important;
                 }
             }
         }

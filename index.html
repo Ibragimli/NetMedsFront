@@ -25,7 +25,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-2 p-0 headLogo" style=" display: flex; align-items: center; ">
-                    <a href="#">
+                    <a href="index.html">
                         <div class="headerLogoImage">
                             <img class="img-fluid" src="./Images/headers/home-logo-netmeds-new.svg"
                                 alt="home-logo-netmeds-new">
@@ -69,7 +69,10 @@
                                 </div>
                             </div>
                             <input type="text" class="form-control"
-                                placeholder="Search for medicine & wellness products…">
+                                placeholder="Search for medicine & wellness products…"
+                                style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                            <div class="searchBox">
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -97,12 +100,12 @@
 
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="login.html">
                                         <span class="signIn">Sign in</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="register.html">
                                         <span>Sign up</span>
                                     </a>
                                 </li>
@@ -135,7 +138,7 @@
                 </div>
                 <div class="col  navBox">
                     <img src="./Images/navbars/diagnostics.svg" alt="diagnostics">
-                    <a class=" nav-link" href="#">Lab Tests</a>
+                    <a class=" nav-link" href="./healthpackages.html">Lab Tests</a>
                 </div>
 
             </div>
@@ -214,6 +217,7 @@
                 </div>
             </div>
         </section>
+        
         <section id="slider">
             <div class="container-fluid">
                 <div class="row">
@@ -1335,18 +1339,19 @@
                         Get a free subscription to our health and fitness tip and stay tuned to our latest offers
                     </p>
                     <form action="#">
-                        <input type="text" class="form-control" placeholder="Enter your email address" >
+                        <input type="text" class="form-control" placeholder="Enter your email address">
                         <i class="fa-solid fa-arrow-right"></i>
                     </form>
                     <ul>
                         <li>
-                            <a
-                                href="https://play.google.com/store/apps/details?id=com.NetmedsMarketplace.Netmeds&hl=en" target="_blank">
+                            <a href="https://play.google.com/store/apps/details?id=com.NetmedsMarketplace.Netmeds&hl=en"
+                                target="_blank">
                                 <img src="./Images/footers/play_store.png" alt="">
                             </a>
                         </li>
                         <li>
-                            <a href="https://apps.apple.com/in/app/netmeds-india-ki-pharmacy/id1011070011" target="_blank">
+                            <a href="https://apps.apple.com/in/app/netmeds-india-ki-pharmacy/id1011070011"
+                                target="_blank">
                                 <img src="./Images/footers/app_store.png" alt="">
                             </a>
                         </li>
@@ -1394,6 +1399,11 @@
     <script src="./js/newProductOwl.js"></script>
     <script src="./js/favproduct.js"></script>
     <script src="./js/slider.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>
 </body>
 
 </html>
