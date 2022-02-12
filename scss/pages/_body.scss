@@ -19,7 +19,15 @@ body {
     }
 
     h1,
-    h2 {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Lato', sans-serif;
+    }
+
+    label {
         font-family: 'Lato', sans-serif;
     }
 
@@ -27,10 +35,11 @@ body {
         text-decoration: none;
         list-style: none;
         font-family: 'Lato', sans-serif;
-
     }
-
     .row {
         --bs-gutter-x: 0 !important;
+    }
+    li{
+        list-style: none;
     }
 }

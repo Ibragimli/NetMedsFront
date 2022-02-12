@@ -22,7 +22,15 @@ body p {
 }
 
 body h1,
-body h2 {
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+body label {
   font-family: 'Lato', sans-serif;
 }
 
@@ -34,6 +42,10 @@ body a {
 
 body .row {
   --bs-gutter-x: 0 !important;
+}
+
+body li {
+  list-style: none;
 }
 
 footer .container-fluid {
@@ -941,7 +953,7 @@ table {
 
 #discountOwl .container-fluid .disDown .owl-carousel-discount .item .disPrice p {
   font-size: 18px;
-  color: blue;
+  color: #ef4281;
 }
 
 #discountOwl .container-fluid .disDown .owl-carousel-discount .item .disPrice del {
@@ -1105,7 +1117,7 @@ table {
 
 #newProduct .container-fluid .newProDown .owl-carousel-newproduct .item .disPrice p {
   font-size: 18px;
-  color: blue;
+  color: #ef4281;
 }
 
 #newProduct .container-fluid .newProDown .owl-carousel-newproduct .item .disPrice del {
@@ -1273,7 +1285,7 @@ table {
 
 #favProduct .container-fluid .favProDown .owl-carousel-favproduct .item .disPrice p {
   font-size: 18px;
-  color: blue;
+  color: #ef4281;
 }
 
 #favProduct .container-fluid .favProDown .owl-carousel-favproduct .item .disPrice del {
@@ -1744,9 +1756,6 @@ table {
 }
 
 #basket .container .products {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   padding-bottom: 10px;
 }
 
@@ -1839,6 +1848,14 @@ table {
   line-height: 16px;
   margin-left: 5px px;
   text-decoration: line-through;
+}
+
+#basket .container .products .productsBox .product .priceCount .count label {
+  font-family: 'Lato', sans-serif;
+}
+
+#basket .container .products .productsBox .product .priceCount .count select {
+  width: 35px;
 }
 
 #basket .container .products .productsBox .product .productBtn {
@@ -2090,7 +2107,7 @@ table {
   color: teal;
   padding: 10px;
   position: absolute;
-  top: 24%;
+  top: 10%;
   right: -20px;
   font-size: 25px;
   opacity: 0;
@@ -2112,7 +2129,7 @@ table {
   color: #32AEB1;
   padding: 10px;
   position: absolute;
-  top: 41%;
+  top: 26%;
   right: -20px;
   font-size: 25px;
   opacity: 0;
@@ -2130,7 +2147,7 @@ table {
   color: black;
   padding: 10px;
   position: absolute;
-  top: 24%;
+  top: 5%;
   right: -20px;
   font-size: 25px;
   opacity: 0;
@@ -2174,7 +2191,7 @@ table {
 #basket .container .mostOwl .owl-carousel-mostOwl .owl-nav .owl-next {
   position: absolute;
   top: 38%;
-  right: 0;
+  right: 0px;
 }
 
 #basket .container .mostOwl .owl-carousel-mostOwl .owl-nav button {
@@ -2198,5 +2215,281 @@ table {
 
 #basket .container .mostOwl .owl-carousel-mostOwl .owl-nav button:hover {
   color: gray;
+}
+
+#forgotPassword {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #F6F6F7;
+}
+
+#forgotPassword .container {
+  width: 1030px;
+  height: 528px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#forgotPassword .container .row .forgotImage {
+  margin-right: 30px;
+}
+
+#forgotPassword .container .row .forgotImage img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#forgotPassword .container .row .forgotInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#forgotPassword .container .row .forgotInput h2 {
+  padding: 0;
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: #151b39;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+#forgotPassword .container .row .forgotInput form input {
+  width: 350px;
+}
+
+#forgotPassword .container .row .forgotInput form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#forgotPassword .container .row .forgotInput form button {
+  border: none;
+  background-color: #24AEB1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#forgotPassword .container .row .forgotInput form button:hover {
+  background-color: #24afb1b6;
+}
+
+#forgotPassword {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #F6F6F7;
+}
+
+#forgotPassword .container {
+  width: 1030px;
+  height: 528px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#forgotPassword .container .row .forgotImage {
+  margin-right: 30px;
+}
+
+#forgotPassword .container .row .forgotImage img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#forgotPassword .container .row .forgotInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#forgotPassword .container .row .forgotInput h2 {
+  padding: 0;
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: #151b39;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+#forgotPassword .container .row .forgotInput form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#forgotPassword .container .row .forgotInput form input {
+  width: 350px;
+}
+
+#forgotPassword .container .row .forgotInput form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#forgotPassword .container .row .forgotInput form button {
+  border: none;
+  background-color: #24AEB1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#forgotPassword .container .row .forgotInput form button:hover {
+  background-color: #24afb1b6;
+}
+
+#wishlist {
+  background-color: #F3F3F3;
+  padding: 20px;
+}
+
+#wishlist .container {
+  text-align: center;
+}
+
+#wishlist .container h1 {
+  color: #151b39;
+  letter-spacing: 0.25px;
+  padding: 4px 0px;
+  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#wishlist .container h3 {
+  color: #151b39;
+  letter-spacing: 0.25px;
+  padding: 4px 0px;
+  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#wishlist .container .wishProducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  background-color: #EAFAFF;
+  border-radius: 4px;
+}
+
+#wishlist .container .wishProducts .wishProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+#wishlist .container .wishProducts .wishProduct .cardImage a img {
+  width: 100%;
+}
+
+#wishlist .container .wishProducts .wishProduct .cardInfo a h2 {
+  color: #151b39;
+  line-height: 42px;
+}
+
+#wishlist .container .wishProducts .wishProduct .wishPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 15px;
+}
+
+#wishlist .container .wishProducts .wishProduct .wishPrice p {
+  font-size: 18px;
+  color: #ef4281;
+}
+
+#wishlist .container .wishProducts .wishProduct .wishPrice del {
+  padding: 0px 5px;
+  color: #999999;
+  text-decoration: line-through;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#wishlist .container .wishProducts .wishProduct .wishPrice span {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 24px;
+  padding: 0 7px;
+  min-width: 46px;
+  background: #bd0018;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+#wishlist .container .wishProducts .wishProduct .wishBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#wishlist .container .wishProducts .wishProduct .wishBtn .addBasket {
+  background-color: #24aeb1;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
