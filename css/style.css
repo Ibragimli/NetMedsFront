@@ -512,23 +512,146 @@ header .container-fluid .row .headUser ul li a .basketCart {
   font-weight: 700;
 }
 
-header .container-fluid .row .headUser ul .signInUp {
+header .container-fluid .row .headUser ul li .basketA {
+  position: relative;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketTriangle {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 14px solid red;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketHover {
+  border-radius: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 20px;
+  padding: 20px 20px 40px 20px;
+  background-color: white;
+  width: 320px;
+  position: absolute;
+  top: 40px;
+  left: -260px;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2px 0px 12px 0px;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverUp h3 {
+  font-weight: 700;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #6f7284;
+  line-height: 18px;
+  height: 16px;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverUp p {
+  font-weight: 700;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: normal;
+  color: #151b39;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverMiddle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2px 0px 7px 0px;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverMiddle .row {
+  padding: 0px;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverMiddle .row .itemBasket {
+  margin-bottom: 11px;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverMiddle .row .itemBasket .itemName {
+  float: left;
+  width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #151b39;
+  font-weight: 700;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverMiddle .row .itemBasket .itemDetails {
+  float: right;
+  width: 35%;
+  text-align: right;
+  font-size: 14px;
+  color: #151b39;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverDown .basketHoverDownLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverDown .basketHoverDownRight a {
+  height: 36px;
+  background-color: #24aeb1;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+}
+
+header .container-fluid .row .headUser ul li .basketA:hover .basketHover {
+  display: block;
+}
+
+header .container-fluid .row .headUser .signInUp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 2px;
 }
 
-header .container-fluid .row .headUser ul .signInUp img {
+header .container-fluid .row .headUser .signInUp img {
   padding-left: 5px;
   cursor: pointer;
 }
 
-header .container-fluid .row .headUser ul .signInUp ul li {
+header .container-fluid .row .headUser .signInUp ul li {
   width: 60px;
 }
 
-header .container-fluid .row .headUser ul .signInUp ul li a span {
+header .container-fluid .row .headUser .signInUp ul li a span {
   padding-top: 3px;
   color: white;
   font-size: 14px;
@@ -537,13 +660,13 @@ header .container-fluid .row .headUser ul .signInUp ul li a span {
   transition: all 0.5s;
 }
 
-header .container-fluid .row .headUser ul .signInUp ul li a .signIn::after {
+header .container-fluid .row .headUser .signInUp ul li a .signIn::after {
   content: '/';
   padding-left: 5px;
   color: white !important;
 }
 
-header .container-fluid .row .headUser ul .signInUp ul li a span:hover {
+header .container-fluid .row .headUser .signInUp ul li a span:hover {
   color: #CED0D1;
 }
 

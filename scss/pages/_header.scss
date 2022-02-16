@@ -60,6 +60,7 @@ header {
 
                         .dropdown-menu {
                             border-radius: 5px;
+
                             .menuBox {
                                 padding: 18px 21px;
 
@@ -127,6 +128,7 @@ header {
                                 .menuLocation {
                                     display: flex;
                                     align-items: center;
+
                                     img {
                                         width: 16px;
                                     }
@@ -175,12 +177,14 @@ header {
                         margin-left: 10px;
 
                         a {
-                            i{
+                            i {
                                 color: white;
                                 padding-right: 5px;
                             }
+
                             display: flex;
                             align-items: center;
+
                             img {
                                 margin-right: 8px;
                                 margin-left: 15px;
@@ -201,6 +205,7 @@ header {
 
                             .basketImage {
                                 position: relative;
+
                                 sub {
                                     display: flex;
                                     align-items: center;
@@ -225,45 +230,166 @@ header {
                                 font-weight: 700;
                             }
                         }
-                    }
 
-                    .signInUp {
-                        display: flex;
-                        padding-top: 2px;
+                        .basketA {
+                            position: relative;
 
-                        img {
-                            padding-left: 5px;
-                            cursor: pointer;
-                        }
+                            .basketTriangle {
+                                position: absolute;
+                                top: 28px;
+                                left: 20px;
+                                width: 0;
+                                height: 0;
+                                border-left: 8px solid transparent;
+                                border-right: 8px solid transparent;
+                                border-bottom: 14px solid red;
+                            }
 
-                        ul {
-                            li {
-                                width: 60px;
+                            .basketHover {
+                                border-radius: 5px;
+                                transition: all 0.5s;
+                                padding: 20px;
+                                padding: 20px 20px 40px 20px;
+                                background-color: white;
+                                width: 320px;
+                                position: absolute;
+                                top: 40px;
+                                left: -260px;
 
-                                a {
-                                    span {
-                                        padding-top: 3px;
-                                        color: white;
+                                .basketHoverUp {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 2px 0px 12px 0px;
+
+                                    h3 {
+                                        font-weight: 700;
                                         font-size: 14px;
                                         font-stretch: normal;
-                                        transition: all 0.5s;
+                                        font-style: normal;
+                                        letter-spacing: 1px;
+                                        color: #6f7284;
+                                        line-height: 18px;
+                                        height: 16px;
                                     }
 
-                                    .signIn::after {
-                                        content: '/';
-                                        padding-left: 5px;
-                                        color: white !important;
+                                    p {
+                                        font-weight: 700;
+                                        font-size: 14px;
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: 16px;
+                                        letter-spacing: normal;
+                                        color: #151b39;
+                                    }
+                                }
+
+                                .basketHoverMiddle {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 2px 0px 7px 0px;
+
+                                    .row {
+                                        padding: 0px;
+
+                                        .itemBasket {
+                                            margin-bottom: 11px;
+
+                                            .itemName {
+                                                float: left;
+                                                width: 65%;
+                                                white-space: nowrap;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                font-size: 14px;
+                                                color: #151b39;
+                                                font-weight: 700;
+                                            }
+
+                                            .itemDetails {
+                                                float: right;
+                                                width: 35%;
+                                                text-align: right;
+                                                font-size: 14px;
+                                                color: #151b39;
+                                            }
+                                        }
                                     }
 
-                                    span:hover {
-                                        color: #CED0D1;
+                                }
+
+                                .basketHoverDown {
+                                    .basketHoverDownLeft {
+                                        display: flex;
+                                        flex-direction: column;
+                                        p {}
+
+                                        span {}
+                                    }
+
+                                    .basketHoverDownRight {
+                                        a {
+                                            height: 36px;
+                                            background-color: #24aeb1;
+                                            border-radius: 5px;
+                                            color: #fff;
+                                            line-height: 36px;
+                                            text-align: center;
+                                            font-size: 14px;
+                                            box-shadow: none;
+                                            border: 0;
+                                        }
                                     }
                                 }
 
                             }
+                        }
 
+                        .basketA:hover {
+                            .basketHover {
+                                display: block;
+                            }
+                        }
+                    }
+
+
+                }
+
+                .signInUp {
+                    display: flex;
+                    padding-top: 2px;
+
+                    img {
+                        padding-left: 5px;
+                        cursor: pointer;
+                    }
+
+                    ul {
+                        li {
+                            width: 60px;
+
+                            a {
+                                span {
+                                    padding-top: 3px;
+                                    color: white;
+                                    font-size: 14px;
+                                    font-stretch: normal;
+                                    transition: all 0.5s;
+                                }
+
+                                .signIn::after {
+                                    content: '/';
+                                    padding-left: 5px;
+                                    color: white !important;
+                                }
+
+                                span:hover {
+                                    color: #CED0D1;
+                                }
+                            }
 
                         }
+
+
                     }
                 }
             }
