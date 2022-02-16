@@ -3327,34 +3327,19 @@ body #productComments .container .commentView .comments .comment .commentDown p 
   color: #6f7284;
 }
 
-#wishlist {
+body {
   background-color: #F3F3F3;
+}
+
+body #wishlist {
   padding: 20px;
 }
 
-#wishlist .container {
+body #wishlist .container {
   text-align: center;
 }
 
-#wishlist .container h1 {
-  color: #151b39;
-  letter-spacing: 0.25px;
-  padding: 4px 0px;
-  line-height: 1.2;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-#wishlist .container h3 {
-  color: #151b39;
-  letter-spacing: 0.25px;
-  padding: 4px 0px;
-  line-height: 1.2;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-#wishlist .container .wishProducts {
+body #wishlist .container .wishProducts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3363,7 +3348,26 @@ body #productComments .container .commentView .comments .comment .commentDown p 
   border-radius: 4px;
 }
 
-#wishlist .container .wishProducts .wishProduct {
+body #wishlist .container .wishProducts h1 {
+  color: #24aeb1;
+  letter-spacing: 0.25px;
+  padding: 4px 0px;
+  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+body #wishlist .container .wishProducts h3 {
+  color: #24aeb1;
+  letter-spacing: 0.25px;
+  padding: 4px 0px;
+  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+body #wishlist .container .wishProducts .wishProduct {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3374,23 +3378,23 @@ body #productComments .container .commentView .comments .comment .commentDown p 
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
   background-color: #fff;
-  margin-bottom: 10px;
-  width: 90%;
+  margin-bottom: 15px;
+  width: 95%;
 }
 
-#wishlist .container .wishProducts .wishProduct .cardImage a img {
+body #wishlist .container .wishProducts .wishProduct .cardImage a img {
   width: 100%;
 }
 
-#wishlist .container .wishProducts .wishProduct .cardInfo a h2 {
+body #wishlist .container .wishProducts .wishProduct .cardInfo a h2 {
   color: #151b39;
   line-height: 42px;
 }
 
-#wishlist .container .wishProducts .wishProduct .wishPrice {
+body #wishlist .container .wishProducts .wishProduct .wishPrice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3400,12 +3404,12 @@ body #productComments .container .commentView .comments .comment .commentDown p 
   padding-bottom: 15px;
 }
 
-#wishlist .container .wishProducts .wishProduct .wishPrice p {
+body #wishlist .container .wishProducts .wishProduct .wishPrice p {
   font-size: 18px;
   color: #ef4281;
 }
 
-#wishlist .container .wishProducts .wishProduct .wishPrice del {
+body #wishlist .container .wishProducts .wishProduct .wishPrice del {
   padding: 0px 5px;
   color: #999999;
   text-decoration: line-through;
@@ -3413,7 +3417,7 @@ body #productComments .container .commentView .comments .comment .commentDown p 
   font-weight: 400;
 }
 
-#wishlist .container .wishProducts .wishProduct .wishPrice span {
+body #wishlist .container .wishProducts .wishProduct .wishPrice span {
   color: #fff;
   font-weight: 700;
   text-align: center;
@@ -3425,7 +3429,7 @@ body #productComments .container .commentView .comments .comment .commentDown p 
   border-radius: 3px;
 }
 
-#wishlist .container .wishProducts .wishProduct .wishBtn {
+body #wishlist .container .wishProducts .wishProduct .wishBtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3433,23 +3437,23 @@ body #productComments .container .commentView .comments .comment .commentDown p 
       justify-content: space-around;
 }
 
-#wishlist .container .wishProducts .wishProduct .wishBtn .addBasket {
+body #wishlist .container .wishProducts .wishProduct .wishBtn .addBasket {
   background-color: #24aeb1;
   border: none;
 }
 
-#profile {
+body {
   background-color: #F3F7FB;
 }
 
-#profile .container .row {
+body #profile .container .row {
   padding: 20px 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-#profile .container .row .profileBox .nav .nav-link {
+body #profile .container .row .profileBox .nav .nav-link {
   color: #24AEB1;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -3460,32 +3464,32 @@ body #productComments .container .commentView .comments .comment .commentDown p 
   border-radius: 0.15rem;
 }
 
-#profile .container .row .profileBox .nav .nav-link i {
+body #profile .container .row .profileBox .nav .nav-link i {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   padding-right: 4px;
   color: deeppink;
 }
 
-#profile .container .row .profileBox .nav .active {
+body #profile .container .row .profileBox .nav .active {
   color: white;
   background-color: #24AEB1;
 }
 
-#profile .container .row .profileBox .nav .active:hover {
+body #profile .container .row .profileBox .nav .active:hover {
   background-color: #24afb19c;
 }
 
-#profile .container .row .profileBox .nav .nav-link:hover {
+body #profile .container .row .profileBox .nav .nav-link:hover {
   color: white;
   background-color: #24afb19c;
 }
 
-#profile .container .row .profileBox .nav .nav-link:hover i {
+body #profile .container .row .profileBox .nav .nav-link:hover i {
   color: white;
 }
 
-#profile .container .row .profileBox .nav a {
+body #profile .container .row .profileBox .nav a {
   color: #24AEB1;
   font-size: 16px;
   display: -webkit-box;
@@ -3506,51 +3510,51 @@ body #productComments .container .commentView .comments .comment .commentDown p 
   transition: all 0.4s;
 }
 
-#profile .container .row .profileBox .nav a i {
+body #profile .container .row .profileBox .nav a i {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   padding-right: 4px;
   color: deeppink;
 }
 
-#profile .container .row .profileBox .nav a:hover {
+body #profile .container .row .profileBox .nav a:hover {
   color: white;
   background-color: #24afb19c;
 }
 
-#profile .container .row .profileBox .nav a:hover i {
+body #profile .container .row .profileBox .nav a:hover i {
   color: white;
 }
 
-#profile .container .row .profileBox .tab-content {
+body #profile .container .row .profileBox .tab-content {
   background-color: #fff;
   border: 1px solid #24AEB1;
   border-radius: 5px;
   padding: 30px;
 }
 
-#profile .container .row .profileBox .tab-content .tab-pane .myaccount-content h3 {
+body #profile .container .row .profileBox .tab-content .tab-pane .myaccount-content h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   color: #0b1219;
 }
 
-#profile .container .row .profileBox .tab-content .tab-pane .myaccount-content .account-details-form form .row input:focus {
+body #profile .container .row .profileBox .tab-content .tab-pane .myaccount-content .account-details-form form .row input:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-color: #24AEB1;
 }
 
-#profile .container .row .profileBox .tab-content .tab-pane .myaccount-content .account-details-form form .row h3 {
+body #profile .container .row .profileBox .tab-content .tab-pane .myaccount-content .account-details-form form .row h3 {
   padding: 20px 0px;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  color: #0b1219;
+  color: black;
 }
 
-#profile .container .row .profileBox .tab-content .tab-pane .myaccount-content .account-details-form form .row button {
+body #profile .container .row .profileBox .tab-content .tab-pane .myaccount-content .account-details-form form .row button {
   padding: 8px 35px;
   border: none;
   background-color: #24AEB1;
@@ -3558,41 +3562,45 @@ body #productComments .container .commentView .comments .comment .commentDown p 
   transition: all 0.4s;
 }
 
-#profile .container .row .profileBox .tab-content .tab-pane .myaccount-content .account-details-form form .row button:hover {
+body #profile .container .row .profileBox .tab-content .tab-pane .myaccount-content .account-details-form form .row button:hover {
   background-color: #24afb1a8;
 }
 
-#profile .container .row .profileBox .tab-content .tab-pane table {
-  border: 2px solid;
+body #profile .container .row .profileBox .tab-content .tab-pane table {
+  border: 2px solid #C7DBD2;
 }
 
-#profile .container .row .profileBox .tab-content .tab-pane table thead {
-  background-color: #0b1219;
+body #profile .container .row .profileBox .tab-content .tab-pane table thead {
+  background-color: #C7DBD2;
 }
 
-#profile .container .row .profileBox .tab-content .tab-pane table thead tr th {
+body #profile .container .row .profileBox .tab-content .tab-pane table thead tr th {
   text-align: center;
   padding: 10px 60px;
   color: #fff;
-  border-right: 2px solid black;
+  border-right: 2px solid #C7DBD2;
 }
 
-#profile .container .row .profileBox .tab-content .tab-pane table thead .labTests th {
+body #profile .container .row .profileBox .tab-content .tab-pane table thead .labTests th {
   text-align: center;
   padding: 10px 30px;
   color: #fff;
-  border-right: 2px solid black;
+  border-right: 2px solid #C7DBD2;
 }
 
-#profile .container .row .profileBox .tab-content .tab-pane table tbody tr th {
+body #profile .container .row .profileBox .tab-content .tab-pane table tbody {
+  border-top: 2px solid #C7DBD2;
+}
+
+body #profile .container .row .profileBox .tab-content .tab-pane table tbody tr th {
   text-align: center;
-  border-right: 2px solid black;
+  border-right: 2px solid #C7DBD2;
 }
 
-#profile .container .row .profileBox .tab-content .tab-pane table tbody tr td {
+body #profile .container .row .profileBox .tab-content .tab-pane table tbody tr td {
   text-align: center;
   padding: 15px 0px;
-  border-right: 2px solid black;
+  border-right: 2px solid #C7DBD2;
 }
 
 #error {
