@@ -1,11 +1,12 @@
 @media only screen and (max-width: 1095px) {
     header {
         height: 145px !important;
-        
+
         .container-fluid {
             .row {
                 display: flex !important;
                 justify-content: center !important;
+
                 .headLogo {
                     .headerLogoImage {
                         img {
@@ -15,6 +16,7 @@
                         }
                     }
                 }
+
                 .headUser {
                     padding-top: 20px;
                     padding-bottom: 15px;
@@ -31,11 +33,12 @@
     #basket {
         .container {
             h1 {
-               text-align: center !important;
+                text-align: center !important;
             }
+
             .products {
-                justify-content: center !important; 
-               
+                justify-content: center !important;
+
                 .payment {
                     width: 400px !important;
                     margin-left: 0px !important;
@@ -43,8 +46,201 @@
             }
         }
     }
+
+    #profile {
+        background-color: #F3F7FB;
+
+        .container {
+            .row {
+                .profileBox {
+                    flex-direction: column;
+                    justify-content: center !important;
+                    align-items: center !important;
+
+                    .tab-content {
+                        .tab-pane {
+                            table {
+                                thead {
+                                    tr {
+                                        th {
+                                            padding: 10px 25px !important;
+                                        }
+                                    }
+
+                                    .labTests {
+                                        th {
+                                            padding: 10px 15px !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #orderBeauty {
+        .container {
+            .row {
+                .OrderB {
+                    border-right: 0px !important;
+                    border-bottom: 1px solid rgba(11, 18, 25, .2);
+                    margin-bottom: 20px;
+
+                    .row {
+
+                        .leftOrder {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                        }
+
+                        .orderRight {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .Beauty {
+                    .leftBeauty {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                    }
+
+                    .beautyRight {
+                        display: flex;
+                        justify-content: center !important;
+                    }
+                }
+
+            }
+        }
+    }
+
+    footer {
+        .container-fluid {
+
+            .footUp {
+
+                .footImage {
+                    text-align: center;
+
+                }
+            }
+
+            .footMiddle {
+                .footCompany {
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+
+                .footShopping {
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+
+
+
+            .footSocial {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            .footSubscribe {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    padding: 0px 20px !important;
+                }
+            }
+
+            .copyRight {
+                .copyBox {
+                    display: flex;
+                    justify-content: center !important;
+
+                }
+            }
+        }
+    }
+
+    #pDetail {
+        .container {
+            .row {
+                .productRight {
+                    padding-top: 10px !important;
+                }
+            }
+        }
+    }
+
+    #shopFilter {
+        padding: 20px 0px;
+
+        .container {
+            .shopLeft {
+
+                .shopFilter {
+
+
+
+                    .filterBrands {
+                        .noneAccordion {
+                            display: none;
+                        }
+                    }
+
+                    .filterBrands {
+                        .accordion {
+                            display: inline-block !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #productComments {
+        .container {
+            .commentWrite {
+                .commentReview {
+                    .form-floating {
+                        form {
+                            .commentRate {
+                                .row {
+                                    input {
+                                        width: 100% !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 }
-
-
-
-

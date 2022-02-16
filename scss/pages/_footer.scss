@@ -39,6 +39,11 @@ footer {
                             line-height: 32px;
                             font-size: 14px;
                             color: #0b1219;
+                            transition: all 0.5s;
+                        }
+
+                        a:hover {
+                            color: #31B3B6;
                         }
                     }
                 }
@@ -60,6 +65,11 @@ footer {
                             line-height: 32px;
                             font-size: 14px;
                             color: #0b1219;
+                            transition: all 0.5s;
+                        }
+
+                        a:hover {
+                            color: #31B3B6;
                         }
                     }
                 }
@@ -84,6 +94,12 @@ footer {
                         line-height: 32px;
                         font-size: 14px;
                         color: #0b1219;
+                        transition: all 0.5s;
+
+                    }
+
+                    a:hover {
+                        color: #31B3B6;
                     }
                 }
             }
@@ -145,25 +161,24 @@ footer {
         }
 
         .copyRight {
-            ul {
-                display: flex;
-                justify-content: space-between;
-    
-                li {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgba(11, 18, 25, .5);
+
+            .copyBox {
+
+                a {
                     color: rgba(11, 18, 25, .5);
-                    display: flex;
-                    align-self: center;
-    
-                    a {
-                        color: rgba(11, 18, 25, .5);
-                        line-height: 65px;
-                    }
+                    line-height: 65px;
+                    transition: all 0.5s;
+                }
+
+                a:hover {
+                    color: #31B3B6;
                 }
             }
         }
-
-       
     }
-
-
 }
