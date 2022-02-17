@@ -121,51 +121,30 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">COUNTRY</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="1">
-                                    <a href="#">
-                                        Azerbaijan
-                                    </a>
-                                </option>
-                                <option value="2">
-                                    <a href="#">
-                                        Turkey
-                                    </a>
-                                </option>
-                                <option value="3">
-                                    <a href="#">
-                                        Italy
-                                    </a>
-                                </option>
-                                <option value="4">
-                                    <a href="#">
-                                        Germany
-                                    </a>
-                                </option>
-                                <option value="5">
-                                    <a href="#">
-                                        Brazil
-                                    </a>
-                                </option>
+                            <input class="form-control" placeholder="Price: 25" type="number" disabled>
+                        </div>
 
-                            </select>
-                        </div>
+
+
+
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Test Time</label>
-                            <input class="form-control" type="datetime-local">
+                            <input class="date" type="date">
                         </div>
+
+
                         <div class="mb-3 text-center">
                             <button class="btn btn-primary">
                                 Book Now
                             </button>
                         </div>
                     </form>
+
                 </div>
             </div>
 
         </div>
     </section>
+
     <section id="labPartner">
         <div class="container">
             <div class="row">
@@ -210,6 +189,9 @@
     </section>
 
 
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>
@@ -220,15 +202,15 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script>
-        const today = Date.now();
 
-        config = {
-            minDate = Date.now(),
-            enableTime: false,
-        }
-        flatpickr("input[type=datetime-local]", {});
+    <script>
+        var today, datepicker;
+        today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+        datepicker = $('#date').datepicker({
+            minDate: today
+        });
     </script>
+    <script src="./js/flatpickr.js"></script>
 </body>
 
 </html>

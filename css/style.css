@@ -48,6 +48,11 @@ body li {
   list-style: none;
 }
 
+footer {
+  background-color: white;
+  border-radius: 2px;
+}
+
 footer .container-fluid {
   padding: 30px 25px;
 }
@@ -441,6 +446,9 @@ header .container-fluid .row .headUser ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .container-fluid .row .headUser ul li {
@@ -512,11 +520,18 @@ header .container-fluid .row .headUser ul li a .basketCart {
   font-weight: 700;
 }
 
-header .container-fluid .row .headUser ul li .basketA {
+header .container-fluid .row .headUser ul .basketA {
   position: relative;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketTriangle {
+header .container-fluid .row .headUser ul .basketA .basketHover {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header .container-fluid .row .headUser ul .basketA .basketHover .basketTriangle {
   position: absolute;
   top: 28px;
   left: 20px;
@@ -524,23 +539,22 @@ header .container-fluid .row .headUser ul li .basketA .basketTriangle {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 14px solid red;
+  border-bottom: 14px solid white;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketHover {
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover {
   border-radius: 5px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   padding: 20px;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 15px 25px 20px;
   background-color: white;
-  width: 320px;
   position: absolute;
-  top: 40px;
-  left: -260px;
+  top: 42px;
+  left: -320px;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverUp {
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverUp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,7 +564,7 @@ header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverU
   padding: 2px 0px 12px 0px;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverUp h3 {
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverUp h2 {
   font-weight: 700;
   font-size: 14px;
   font-stretch: normal;
@@ -561,7 +575,7 @@ header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverU
   height: 16px;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverUp p {
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverUp span {
   font-weight: 700;
   font-size: 14px;
   font-stretch: normal;
@@ -571,7 +585,7 @@ header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverU
   color: #151b39;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverMiddle {
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,16 +595,19 @@ header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverM
   padding: 2px 0px 7px 0px;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverMiddle .row {
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row {
   padding: 0px;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverMiddle .row .itemBasket {
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row .itemBasket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 11px;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverMiddle .row .itemBasket .itemName {
-  float: left;
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row .itemBasket .basketName {
+  margin-right: 20px;
   width: 65%;
   white-space: nowrap;
   overflow: hidden;
@@ -600,15 +617,24 @@ header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverM
   font-weight: 700;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverMiddle .row .itemBasket .itemDetails {
-  float: right;
-  width: 35%;
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row .itemBasket .basketPriceCount {
+  font-weight: 500;
   text-align: right;
-  font-size: 14px;
+  font-size: 15px;
   color: #151b39;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverDown .basketHoverDownLeft {
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px;
+}
+
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownLeft {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,40 +644,56 @@ header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverD
           flex-direction: column;
 }
 
-header .container-fluid .row .headUser ul li .basketA .basketHover .basketHoverDown .basketHoverDownRight a {
-  height: 36px;
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownLeft h3 {
+  font-size: 18px;
+  letter-spacing: .15px;
+  color: #ef4281;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownLeft p {
+  font-weight: 700;
+  letter-spacing: .15px;
+  font-size: 15px;
+  color: #378f30;
+}
+
+header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownRight a {
+  padding: 3px 40px;
   background-color: #24aeb1;
   border-radius: 5px;
   color: #fff;
   line-height: 36px;
   text-align: center;
   font-size: 14px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  font-style: normal;
   border: 0;
+  font-weight: 700;
 }
 
-header .container-fluid .row .headUser ul li .basketA:hover .basketHover {
-  display: block;
+header .container-fluid .row .headUser ul .basketA:hover .basketHover {
+  opacity: 1;
+  visibility: visible;
 }
 
-header .container-fluid .row .headUser .signInUp {
+header .container-fluid .row .headUser ul .signInUp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 2px;
 }
 
-header .container-fluid .row .headUser .signInUp img {
+header .container-fluid .row .headUser ul .signInUp img {
   padding-left: 5px;
   cursor: pointer;
 }
 
-header .container-fluid .row .headUser .signInUp ul li {
+header .container-fluid .row .headUser ul .signInUp ul li {
   width: 60px;
 }
 
-header .container-fluid .row .headUser .signInUp ul li a span {
+header .container-fluid .row .headUser ul .signInUp ul li a span {
   padding-top: 3px;
   color: white;
   font-size: 14px;
@@ -660,13 +702,13 @@ header .container-fluid .row .headUser .signInUp ul li a span {
   transition: all 0.5s;
 }
 
-header .container-fluid .row .headUser .signInUp ul li a .signIn::after {
+header .container-fluid .row .headUser ul .signInUp ul li a .signIn::after {
   content: '/';
   padding-left: 5px;
   color: white !important;
 }
 
-header .container-fluid .row .headUser .signInUp ul li a span:hover {
+header .container-fluid .row .headUser ul .signInUp ul li a span:hover {
   color: #CED0D1;
 }
 
@@ -747,9 +789,248 @@ table {
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
+  header .container-fluid .row .headUser ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .container-fluid .row .headUser ul li {
+    margin-left: 10px;
+  }
+  header .container-fluid .row .headUser ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .container-fluid .row .headUser ul li a i {
+    color: white;
+    padding-right: 5px;
+  }
+  header .container-fluid .row .headUser ul li a img {
+    margin-right: 8px;
+    margin-left: 15px;
+  }
+  header .container-fluid .row .headUser ul li a span {
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    padding-top: 3px;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 14px;
+    font-stretch: normal;
+  }
+  header .container-fluid .row .headUser ul li a span:hover {
+    color: #CED0D1;
+  }
+  header .container-fluid .row .headUser ul li a .basketImage {
+    position: relative;
+  }
+  header .container-fluid .row .headUser ul li a .basketImage sub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 6px;
+    background-color: #EE4380;
+    border-radius: 6.5px;
+    font-size: 12px;
+    color: white;
+    width: 17px;
+    height: 13px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+  }
+  header .container-fluid .row .headUser ul li a .basketCart {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  header .container-fluid .row .headUser ul .basketA {
+    position: relative;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketTriangle {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 14px solid white;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover {
+    border-radius: 5px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 20px;
+    padding: 20px 15px 25px 20px;
+    background-color: white;
+    position: absolute;
+    top: 42px;
+    left: -320px;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverUp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2px 0px 12px 0px;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverUp h2 {
+    font-weight: 700;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: #6f7284;
+    line-height: 18px;
+    height: 16px;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverUp span {
+    font-weight: 700;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 16px;
+    letter-spacing: normal;
+    color: #151b39;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2px 0px 7px 0px;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row {
+    padding: 0px;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row .itemBasket {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 11px;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row .itemBasket .basketName {
+    margin-right: 20px;
+    width: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #151b39;
+    font-weight: 700;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row .itemBasket .basketPriceCount {
+    font-weight: 500;
+    text-align: right;
+    font-size: 15px;
+    color: #151b39;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 0px;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownLeft h3 {
+    font-size: 18px;
+    letter-spacing: .15px;
+    color: #ef4281;
+    margin-bottom: 2px;
+    font-weight: 700;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownLeft p {
+    font-weight: 700;
+    letter-spacing: .15px;
+    font-size: 15px;
+    color: #378f30;
+  }
+  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownRight a {
+    padding: 3px 40px;
+    background-color: #24aeb1;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    border: 0;
+    font-weight: 700;
+  }
+  header .container-fluid .row .headUser ul .basketA:hover .basketHover {
+    opacity: 1;
+    visibility: visible;
+  }
+  header .container-fluid .row .headUser ul .signInUp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 2px;
+  }
+  header .container-fluid .row .headUser ul .signInUp img {
+    padding-left: 5px;
+    cursor: pointer;
+  }
+  header .container-fluid .row .headUser ul .signInUp ul li {
+    width: 60px;
+  }
+  header .container-fluid .row .headUser ul .signInUp ul li a span {
+    padding-top: 3px;
+    color: white;
+    font-size: 14px;
+    font-stretch: normal;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  header .container-fluid .row .headUser ul .signInUp ul li a .signIn::after {
+    content: '/';
+    padding-left: 5px;
+    color: white !important;
+  }
+  header .container-fluid .row .headUser ul .signInUp ul li a span:hover {
+    color: #CED0D1;
+  }
 }
 
 @media only screen and (max-width: 992px) {
+  header .headUser ul .basketA .basketHover .basketAHover {
+    left: -120px !important;
+  }
   #basket .container h1 {
     text-align: center !important;
   }
@@ -1005,6 +1286,7 @@ table {
 }
 
 #slider .item {
+  cursor: pointer;
   width: 100%;
   height: 320px;
 }
@@ -3963,6 +4245,10 @@ body #shopFilter .container .shopLeft .shopFilter {
   padding: 25px 15px;
   border-radius: 8px;
   margin-bottom: 15px;
+  /* Handles and cursors;
+                           */
+  /* Disabled state;
+                           */
 }
 
 body #shopFilter .container .shopLeft .shopFilter h1 {
@@ -4094,7 +4380,178 @@ body #shopFilter .container .shopLeft .shopFilter .filterBrands .accordion .acco
   line-height: 1.5;
 }
 
-body #shopFilter .container .shopRight .shopSlider {
+body #shopFilter .container .shopLeft .shopFilter h2 {
+  font-size: 19px;
+  letter-spacing: 0.25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 8px 5px;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice {
+  padding: 0px 15px;
+  /* Painting and performance;
+                           * Browsers can paint handles in their own layer.
+                           */
+  /* Slider size and handle placement;
+                           */
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .slider-labels {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .slider-labels .caption #slider-range-value1 {
+  color: #151b39;
+  background: 0 0;
+  min-width: 42px;
+  padding: 5px 0px 0px 0px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .slider-labels .caption #slider-range-value2 {
+  color: #151b39;
+  background: 0 0;
+  min-width: 42px;
+  padding: 5px 0px 0px 55px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-target,
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-target {
+  position: relative;
+  direction: ltr;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  /* Fix 401 */
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-origin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-handle {
+  position: relative;
+  z-index: 1;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-stacking .noUi-handle {
+  /* This class is applied to the lower origin when
+                             its values is > 50%. */
+  z-index: 10;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-state-tap .noUi-origin {
+  -webkit-transition: left 0.3s, top .3s;
+  transition: left 0.3s, top .3s;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-base,
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-handle {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-horizontal {
+  height: 4px;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .filterRangePrice .noUi-horizontal .noUi-handle {
+  border-radius: 50%;
+  left: -7px;
+  top: -9px;
+  width: 8px;
+  height: 8px;
+  position: relative;
+  z-index: 1;
+  border: 7px solid #24aeb1;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .noUi-background {
+  background: #D6D7D9;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .noUi-connect {
+  background: #24aeb1;
+  -webkit-transition: background 450ms;
+  transition: background 450ms;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .noUi-origin {
+  border-radius: 2px;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .noUi-target {
+  border-radius: 2px;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .noUi-draggable {
+  cursor: w-resize;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .noUi-vertical .noUi-draggable {
+  cursor: n-resize;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .noUi-handle {
+  cursor: default;
+  -webkit-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+body #shopFilter .container .shopLeft .shopFilter .noUi-handle:active {
+  border: 8px solid #345DBB;
+  border: 8px solid rgba(53, 93, 187, 0.38);
+  background-clip: padding-box;
+  left: -14px;
+  top: -14px;
+}
+
+body #shopFilter .container .shopLeft .shopFilter [disabled].noUi-connect,
+body #shopFilter .container .shopLeft .shopFilter [disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+
+body #shopFilter .container .shopLeft .shopFilter [disabled].noUi-origin,
+body #shopFilter .container .shopLeft .shopFilter [disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+
+body #shopFilter .shopRight .shopSlider {
   cursor: pointer;
   position: relative;
   margin-top: 10px;
@@ -4102,29 +4559,29 @@ body #shopFilter .container .shopRight .shopSlider {
   margin-left: 10px;
 }
 
-body #shopFilter .container .shopRight .shopSlider .item {
+body #shopFilter .shopRight .shopSlider .item {
   border-radius: 8px;
 }
 
-body #shopFilter .container .shopRight .shopSlider .item img {
+body #shopFilter .shopRight .shopSlider .item img {
   border-radius: 8px;
 }
 
-body #shopFilter .container .shopRight .shopSlider .owl-dots {
+body #shopFilter .shopRight .shopSlider .owl-dots {
   position: absolute;
   bottom: 0px;
-  left: 40%;
+  left: 46%;
 }
 
-body #shopFilter .container .shopRight .shopSlider .owl-dots .active span {
+body #shopFilter .shopRight .shopSlider .owl-dots .active span {
   background-color: aqua;
 }
 
-body #shopFilter .container .shopRight .shopSlider .owl-dots button span {
+body #shopFilter .shopRight .shopSlider .owl-dots button span {
   background-color: #F3F7FB;
 }
 
-body #shopFilter .container .shopRight .shopProducts {
+body #shopFilter .shopRight .shopProducts {
   background-color: #fff;
   padding: 10px;
   border-top-right-radius: 7px;
@@ -4132,7 +4589,7 @@ body #shopFilter .container .shopRight .shopProducts {
   margin-left: 10px;
 }
 
-body #shopFilter .container .shopRight .shopProducts h2 {
+body #shopFilter .shopRight .shopProducts h2 {
   font-size: 15px;
   font-weight: 700;
   font-style: normal;
@@ -4143,7 +4600,7 @@ body #shopFilter .container .shopRight .shopProducts h2 {
   margin: 0 0 16px;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct {
+body #shopFilter .shopRight .shopProducts .shopProduct {
   margin-right: 10px;
   margin-bottom: 15px;
   position: relative;
@@ -4152,16 +4609,16 @@ body #shopFilter .container .shopRight .shopProducts .shopProduct {
   border-radius: 8px;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopProImage {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopProImage {
   text-align: center;
   cursor: pointer;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopProImage img {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopProImage img {
   margin-top: 10px;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopProImage span {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopProImage span {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -4173,17 +4630,17 @@ body #shopFilter .container .shopRight .shopProducts .shopProduct .shopProImage 
   line-height: 11px;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopTitle {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopTitle {
   padding-left: 15px;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopTitle a h2 {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopTitle a h2 {
   font-size: 14px;
   color: #151b39;
   letter-spacing: 0;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopTitle p {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopTitle p {
   cursor: pointer;
   font-style: italic;
   line-height: 16px;
@@ -4191,48 +4648,48 @@ body #shopFilter .container .shopRight .shopProducts .shopProduct .shopTitle p {
   margin-bottom: 5px;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopPrice {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopPrice {
   padding: 0px 15px;
   padding-left: 15px;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopPrice .bestP {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopPrice .bestP {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 8px 0px;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopPrice .bestP span {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopPrice .bestP span {
   font-size: 16px;
   color: #6f7284;
   font-weight: 700;
   margin-right: 5px;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopPrice .bestP p {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopPrice .bestP p {
   color: #ef4281;
   font-size: 16px;
   font-weight: 700;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopPrice .MRP span {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopPrice .MRP span {
   color: #6f7284;
   font-size: 15px;
   padding: 5px 5px 5px 0;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopPrice .MRP del {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopPrice .MRP del {
   color: #6f7284;
   font-size: 15px;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopBtn {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopBtn {
   text-align: center;
   padding: 18px 0px 22px 0px;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopBtn .AddBtn {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopBtn .AddBtn {
   background: #24aeb1;
   font-size: 14px;
   border-radius: 4px;
@@ -4243,11 +4700,11 @@ body #shopFilter .container .shopRight .shopProducts .shopProduct .shopBtn .AddB
   transition: all 0.4s;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopBtn .AddBtn:hover {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopBtn .AddBtn:hover {
   background: #ef4281;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopBtn a i {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopBtn a i {
   margin-left: 10px;
   font-size: 20px;
   color: #6f7284;
@@ -4255,11 +4712,11 @@ body #shopFilter .container .shopRight .shopProducts .shopProduct .shopBtn a i {
   transition: all 0.4s;
 }
 
-body #shopFilter .container .shopRight .shopProducts .shopProduct .shopBtn a i:hover {
+body #shopFilter .shopRight .shopProducts .shopProduct .shopBtn a i:hover {
   color: #ef4281;
 }
 
-body #shopFilter .container .shopRight .shopPagination {
+body #shopFilter .shopRight .shopPagination {
   padding: 12px 0px;
   background-color: white;
   border-bottom-right-radius: 7px;
@@ -4267,11 +4724,11 @@ body #shopFilter .container .shopRight .shopPagination {
   margin-left: 10px;
 }
 
-body #shopFilter .container .shopRight .shopPagination nav {
+body #shopFilter .shopRight .shopPagination nav {
   padding: 2px;
 }
 
-body #shopFilter .container .shopRight .shopPagination nav ul {
+body #shopFilter .shopRight .shopPagination nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4280,7 +4737,7 @@ body #shopFilter .container .shopRight .shopPagination nav ul {
           justify-content: center !important;
 }
 
-body #shopFilter .container .shopRight .shopPagination nav ul li a {
+body #shopFilter .shopRight .shopPagination nav ul li a {
   padding: 10px 15px;
 }
 /*# sourceMappingURL=style.css.map */
