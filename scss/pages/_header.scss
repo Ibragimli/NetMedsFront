@@ -25,6 +25,7 @@ header {
 
                     .input-group {
                         display: flex;
+                        position: relative;
 
                         button {
                             background-color: white;
@@ -147,6 +148,19 @@ header {
                             }
                         }
 
+                        .closeSearch {
+                            i {
+                                display: none;
+                                cursor: pointer;
+                                position: absolute;
+                                top: 14px;
+                                right: 8px;
+                                font-size: 22px;
+                                color: #24aeb1;
+                                z-index: 4;
+                            }
+                        }
+
                         input {
                             height: 48px;
                             border: none;
@@ -156,11 +170,61 @@ header {
 
                         input:focus {
                             box-shadow: none;
+
                         }
 
                         ::placeholder {
                             font-family: 'Lato', sans-serif;
                             font-size: 14px;
+                        }
+
+                        .searchBox {
+                            display: none;
+                            z-index: 2;
+                            position: absolute;
+                            top: 46px;
+                            right: 0;
+                            width: 77%;
+                            padding: 15px 0px 20px 0px;
+                            background-color: white;
+                            border-bottom-right-radius: 3px;
+                            border-bottom-left-radius: 3px;
+
+                            ul {
+                                li {
+                                    margin-bottom: 10px;
+                                    margin-left: 10px;
+                                    margin-top: 8px;
+                                    margin-right: 10px;
+                                    padding-bottom: 10px;
+                                    border-bottom: 1px solid gray;
+                                    transition: all 0.4s;
+
+                                    i {
+                                        cursor: pointer;
+                                        padding: 10px;
+                                        font-size: 22px;
+                                        color: #6f7284;
+                                        transition: all 0.4s;
+                                    }
+
+                                    a {
+                                        transition: all 0.4s;
+                                        color: black;
+                                    }
+                                }
+
+                                li:hover {
+                                    border-bottom: 1px solid #32AEB1;
+
+                                    i{
+                                        color: #24aeb1;
+                                    }
+                                    a {
+                                        color: #24aeb1;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -328,6 +392,7 @@ header {
                                     display: flex;
                                     justify-content: space-between;
                                     padding: 10px 0px;
+
                                     .DownLeft {
                                         display: flex;
                                         flex-direction: column;

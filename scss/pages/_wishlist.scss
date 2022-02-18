@@ -100,6 +100,27 @@ body{
                 }
     
             }
+            .wishlistPagination {
+                padding: 12px 0px;
+                background-color: #EAFAFF;
+                border-bottom-right-radius: 7px;
+                border-bottom-left-radius: 7px;
+
+                nav {
+                    padding: 2px;
+
+                    ul {
+                        display: flex;
+                        justify-content: center !important;
+
+                        li {
+                            a {
+                                padding: 10px 15px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

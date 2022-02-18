@@ -182,7 +182,7 @@ footer .container-fluid .footSubscribe form input:focus {
 footer .container-fluid .footSubscribe form i {
   position: absolute;
   top: 10px;
-  right: 0%;
+  right: 4%;
   color: #31B3B6;
 }
 
@@ -271,6 +271,7 @@ header .container-fluid .row .headSearch form .input-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 header .container-fluid .row .headSearch form .input-group button {
@@ -402,6 +403,17 @@ header .container-fluid .row .headSearch form .input-group .dropdown-menu .menuB
   cursor: pointer;
 }
 
+header .container-fluid .row .headSearch form .input-group .closeSearch i {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 14px;
+  right: 8px;
+  font-size: 22px;
+  color: #24aeb1;
+  z-index: 4;
+}
+
 header .container-fluid .row .headSearch form .input-group input {
   height: 48px;
   border: none;
@@ -431,6 +443,57 @@ header .container-fluid .row .headSearch form .input-group ::-ms-input-placehold
 header .container-fluid .row .headSearch form .input-group ::placeholder {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
+}
+
+header .container-fluid .row .headSearch form .input-group .searchBox {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: 46px;
+  right: 0;
+  width: 77%;
+  padding: 15px 0px 20px 0px;
+  background-color: white;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+header .container-fluid .row .headSearch form .input-group .searchBox ul li {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 8px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header .container-fluid .row .headSearch form .input-group .searchBox ul li i {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 22px;
+  color: #6f7284;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header .container-fluid .row .headSearch form .input-group .searchBox ul li a {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: black;
+}
+
+header .container-fluid .row .headSearch form .input-group .searchBox ul li:hover {
+  border-bottom: 1px solid #32AEB1;
+}
+
+header .container-fluid .row .headSearch form .input-group .searchBox ul li:hover i {
+  color: #24aeb1;
+}
+
+header .container-fluid .row .headSearch form .input-group .searchBox ul li:hover a {
+  color: #24aeb1;
 }
 
 header .container-fluid .row .headUser {
@@ -1031,6 +1094,11 @@ table {
   header .headUser ul .basketA .basketHover .basketAHover {
     left: -120px !important;
   }
+  header .searchBox {
+    top: 46px;
+    right: 0;
+    width: 81% !important;
+  }
   #basket .container h1 {
     text-align: center !important;
   }
@@ -1203,6 +1271,46 @@ table {
   }
   #productComments .container .commentWrite .commentReview .form-floating form .commentRate .row input {
     width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 776px) {
+  header .searchBox {
+    top: 46px;
+    right: 0;
+    width: 78% !important;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  header .searchBox {
+    top: 46px;
+    right: 0;
+    width: 72% !important;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  header .searchBox {
+    top: 46px;
+    right: 0;
+    width: 66% !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header .searchBox {
+    top: 46px;
+    right: 0;
+    width: 61% !important;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  header .searchBox {
+    top: 46px;
+    right: 0;
+    width: 55% !important;
   }
 }
 
@@ -2044,12 +2152,30 @@ table {
   margin-bottom: 35px;
 }
 
+#login .container .row .loginInput form .form-check {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#login .container .row .loginInput form input {
+  width: 92%;
+}
+
 #login .container .row .loginInput form input:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 #login .container .row .loginInput form button {
+  margin-right: 5px;
   border: none;
   background-color: #24AEB1;
   -webkit-transition: all 0.4s;
@@ -3845,6 +3971,30 @@ body #wishlist .container .wishProducts .wishProduct .wishBtn {
 body #wishlist .container .wishProducts .wishProduct .wishBtn .addBasket {
   background-color: #24aeb1;
   border: none;
+}
+
+body #wishlist .container .wishlistPagination {
+  padding: 12px 0px;
+  background-color: #EAFAFF;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+body #wishlist .container .wishlistPagination nav {
+  padding: 2px;
+}
+
+body #wishlist .container .wishlistPagination nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+body #wishlist .container .wishlistPagination nav ul li a {
+  padding: 10px 15px;
 }
 
 body {
