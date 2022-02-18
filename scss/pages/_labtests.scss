@@ -85,64 +85,81 @@
                         border: none;
                         background-color: #02b7c2;
                     }
-                    
+
+                    #dateTime_wrapper {
+                        width: 100% !important;
+                        height: 40px !important;
+                    }
+
+                    .e-datetime-wrap {
+                        display: inline-block;
+                    }
+
                 }
             }
         }
 
-       
+
     }
 }
 
 #labPartner {
     background-color: #F6F6F7;
 
-   .container{
-       .row{
-        display: flex;
-        align-items: center;
-        padding: 40px 0px;
-        border-radius: 7px;
-    
-        .labBox {
-            background-color: #fff;
-            padding: 15px 25px;
-    
-            h1 {
-                color: #151b39;
-                font-size: 28px;
-                letter-spacing: 0.25px;
-                padding: 4px 0px;
-                margin-bottom: 0.5rem;
-                font-weight: 700;
-                line-height: 1.2;
-            }
-    
-            p {
-                font-size: 16px;
-                color: rgba(21, 27, 57, .6);
-                margin-bottom: 12px !important;
-            }
-    
-            ul {
-                display: flex;
-                justify-content: center;
-                li {
-                    img {
-                        padding-right: 50px;
+    .container {
+        .row {
+            display: flex;
+            align-items: center;
+            padding: 40px 0px;
+            border-radius: 7px;
+
+            .labBox {
+                background-color: #fff;
+                padding: 15px 25px;
+
+                h1 {
+                    color: #151b39;
+                    font-size: 28px;
+                    letter-spacing: 0.25px;
+                    padding: 4px 0px;
+                    margin-bottom: 0.5rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: rgba(21, 27, 57, .6);
+                    margin-bottom: 12px !important;
+                }
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+
+                    li {
+                        img {
+                            padding-right: 50px;
+                        }
                     }
                 }
-            }
-    
-            .partnerImages {
-                display: flex;
-                justify-content: center;
-    
-                img {
-                    padding-right: 50px;
+
+                .partnerImages {
+                    .row{
+                        justify-content: center;
+                        align-items: center;
+                        .partnerImage{
+                            text-align: center;
+                            img {
+                                padding-right: 50px;
+                                padding-bottom: 7px;
+                            }
+                        }
+                        
+                    }
+                   
                 }
             }
         }
-       }
-   }
+    }
 }

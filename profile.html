@@ -20,28 +20,28 @@
 
 </head>
 
-<body >
+<body>
 
     <section id="profile">
         <div class="container">
             <div class="row">
                 <div class="col-lg-11 ">
                     <div class="profileBox d-flex align-items-start">
-                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        <div class="mb-3 nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
                             <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
                                 aria-selected="true"><i class="fa-solid fa-user-tie"></i> Account Setting</button>
                             <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-profile" type="button" role="tab"
-                                aria-controls="v-pills-profile" aria-selected="false"><i class="fa-solid fa-cart-plus"></i> Order</button>
+                                aria-controls="v-pills-profile" aria-selected="false"><i
+                                    class="fa-solid fa-cart-plus"></i> Order</button>
                             <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-messages" type="button" role="tab"
-                                aria-controls="v-pills-messages" aria-selected="false"><i class="fa-solid fa-flask"></i>Lab Tests</button>
+                                aria-controls="v-pills-messages" aria-selected="false"><i
+                                    class="fa-solid fa-flask"></i>Lab Tests</button>
                             <a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
                         </div>
-
-
 
 
                         <div class="tab-content" id="v-pills-tabContent">
@@ -49,7 +49,6 @@
                                 aria-labelledby="v-pills-home-tab">
                                 <div class="myaccount-content">
                                     <h3>Account Details</h3>
-                                    <hr>
                                     <div class="account-details-form">
                                         <form method="post">
                                             <div class="row">
@@ -119,6 +118,8 @@
 
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                 aria-labelledby="v-pills-profile-tab">
+                                <h3>Order</h3>
+
                                 <table class="table table-cell">
                                     <thead>
                                         <tr>
@@ -149,6 +150,9 @@
 
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                 aria-labelledby="v-pills-messages-tab">
+                                <h3>
+                                    Lab Tests
+                                </h3>
                                 <table class="table table-cell">
                                     <thead>
                                         <tr class="labTests">
@@ -156,19 +160,19 @@
                                             <th scope="col">Name</th>
                                             <th scope="col">Mobile Number</th>
                                             <th scope="col">Package</th>
-                                            <th scope="col">Date</th>
-                                            <th scope="col">Country</th>
+                                            <th scope="col"> Date </th>
+                                            <th scope="col">Price</th>
                                             <th scope="col">Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr >
+                                        <tr>
                                             <th scope="row">1</th>
                                             <td>Mark</td>
-                                            <td>Aug 22, 2018</td>
+                                            <td>+09924321</td>
                                             <td> ₼27,00</td>
-                                            <td>Pending</td>
-                                            <td>Pending</td>
+                                            <td>Aug 22, 2018</td>
+                                            <td>25</td>
                                             <td>Pending</td>
                                         </tr>
                                     </tbody>

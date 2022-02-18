@@ -2364,6 +2364,15 @@ table {
   background-color: #02b7c2;
 }
 
+#labtests .container .labTest .labForm form #dateTime_wrapper {
+  width: 100% !important;
+  height: 40px !important;
+}
+
+#labtests .container .labTest .labForm form .e-datetime-wrap {
+  display: inline-block;
+}
+
 #labPartner {
   background-color: #F6F6F7;
 }
@@ -2413,17 +2422,22 @@ table {
   padding-right: 50px;
 }
 
-#labPartner .container .row .labBox .partnerImages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#labPartner .container .row .labBox .partnerImages .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#labPartner .container .row .labBox .partnerImages img {
+#labPartner .container .row .labBox .partnerImages .row .partnerImage {
+  text-align: center;
+}
+
+#labPartner .container .row .labBox .partnerImages .row .partnerImage img {
   padding-right: 50px;
+  padding-bottom: 7px;
 }
 
 #basket {
@@ -4088,11 +4102,14 @@ body #profile .container .row .profileBox .tab-content {
   padding: 30px;
 }
 
-body #profile .container .row .profileBox .tab-content .tab-pane .myaccount-content h3 {
+body #profile .container .row .profileBox .tab-content .tab-pane h3 {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   color: #0b1219;
+  border-bottom: 1px solid #C7DBD2;
 }
 
 body #profile .container .row .profileBox .tab-content .tab-pane .myaccount-content .account-details-form form .row input:focus {
