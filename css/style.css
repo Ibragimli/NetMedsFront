@@ -418,6 +418,7 @@ header .container-fluid .row .headSearch form .input-group input {
   height: 48px;
   border: none;
   padding: 0;
+  padding-left: 5px;
 }
 
 header .container-fluid .row .headSearch form .input-group input:focus {
