@@ -509,6 +509,91 @@
         }
     }
 
+    #aboutUs {
+        padding: 40px 0px;
+    
+        .container {
+            .aboutUp {
+                h1 {
+                    font-size: 28px !important;
+                }
+            }
+    
+            .aboutDown {
+                .aboutDownLeft {
+                    border-bottom: 2px dotted black;
+                    border-right: 0px dotted black !important;
+                    margin-bottom: 10px;
+                    h1 {
+                        padding-left: 0px !important;
+                        text-align: center !important;
+                    }
+    
+                    h2 {
+                        padding-left: 0px !important;
+                        text-align: center !important;
+                    }
+                }
+    
+                .aboutDownMiddle {
+                    border-bottom: 2px dotted black;
+                    border-right: 0px dotted black !important; 
+                    margin-bottom: 10px;
+                    .aboutUpText {
+                        margin-bottom: 15px;
+    
+                        p {
+                           
+                        }
+                    }
+    
+                    .aboutConvenience {
+                        position: relative;
+    
+                        .aboutConvenienceImage {
+                            img {
+                                position: absolute;
+                                top: 0;
+                                left: -50px !important;
+                            }
+                        }
+    
+                       
+                    }
+    
+                    .aboutOneShop {
+                        position: relative;
+    
+                        .aboutOneShopImage {
+                            img {
+                                position: absolute;
+                                top: 0;
+                                left: -50px !important;
+                            }
+                        }
+    
+                       
+                    }
+    
+                    .aboutTrust {
+                        position: relative;
+    
+                        .aboutTrustImage {
+                            img {
+                                position: absolute;
+                                top: 0;
+                                left: -50px !important;
+                            }
+                        }
+    
+                      
+                    }
+                }
+    
+              
+            }
+        }
+    }
 }
 
 

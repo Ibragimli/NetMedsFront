@@ -1273,6 +1273,57 @@ table {
   #productComments .container .commentWrite .commentReview .form-floating form .commentRate .row input {
     width: 100% !important;
   }
+  #aboutUs {
+    padding: 40px 0px;
+  }
+  #aboutUs .container .aboutUp h1 {
+    font-size: 28px !important;
+  }
+  #aboutUs .container .aboutDown .aboutDownLeft {
+    border-bottom: 2px dotted black;
+    border-right: 0px dotted black !important;
+    margin-bottom: 10px;
+  }
+  #aboutUs .container .aboutDown .aboutDownLeft h1 {
+    padding-left: 0px !important;
+    text-align: center !important;
+  }
+  #aboutUs .container .aboutDown .aboutDownLeft h2 {
+    padding-left: 0px !important;
+    text-align: center !important;
+  }
+  #aboutUs .container .aboutDown .aboutDownMiddle {
+    border-bottom: 2px dotted black;
+    border-right: 0px dotted black !important;
+    margin-bottom: 10px;
+  }
+  #aboutUs .container .aboutDown .aboutDownMiddle .aboutUpText {
+    margin-bottom: 15px;
+  }
+  #aboutUs .container .aboutDown .aboutDownMiddle .aboutConvenience {
+    position: relative;
+  }
+  #aboutUs .container .aboutDown .aboutDownMiddle .aboutConvenience .aboutConvenienceImage img {
+    position: absolute;
+    top: 0;
+    left: -50px !important;
+  }
+  #aboutUs .container .aboutDown .aboutDownMiddle .aboutOneShop {
+    position: relative;
+  }
+  #aboutUs .container .aboutDown .aboutDownMiddle .aboutOneShop .aboutOneShopImage img {
+    position: absolute;
+    top: 0;
+    left: -50px !important;
+  }
+  #aboutUs .container .aboutDown .aboutDownMiddle .aboutTrust {
+    position: relative;
+  }
+  #aboutUs .container .aboutDown .aboutDownMiddle .aboutTrust .aboutTrustImage img {
+    position: absolute;
+    top: 0;
+    left: -50px !important;
+  }
 }
 
 @media only screen and (max-width: 776px) {
@@ -1347,6 +1398,7 @@ table {
 }
 
 .headNavbar .container .row .navBox img {
+  cursor: pointer;
   padding-right: 4px;
 }
 
@@ -3158,6 +3210,7 @@ body #pDetail .container .row .productLeft #carousel .slides li {
 
 body #pDetail .container .row .productRight {
   padding-top: 130px;
+  padding-left: 30px;
 }
 
 body #pDetail .container .row .productRight h1 {
@@ -3681,7 +3734,7 @@ body #productComments .container .commentWrite .commentReview .imageRate .commen
 body #productComments .container .commentWrite .commentReview .imageRate .commentImage h1 {
   font-weight: 700;
   line-height: 64px;
-  font-size: 12px;
+  font-size: 15px;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
@@ -3751,6 +3804,31 @@ body #productComments .container .commentWrite .commentReview .form-floating for
 body #productComments .container .commentWrite .commentReview .form-floating form .commentArea textarea:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+body #productComments .container .commentWrite .commentReview .unForm {
+  text-align: center;
+}
+
+body #productComments .container .commentWrite .commentReview .unForm a {
+  padding: 15px 100px;
+  background-color: rgba(21, 27, 57, 0.06);
+  text-align: center;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  border-radius: 5px;
+  margin: 24px auto 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #737688;
+  font-weight: 700;
+}
+
+body #productComments .container .commentWrite .commentReview .unForm a i {
+  letter-spacing: 1px;
+  color: #737688;
 }
 
 body #productComments .container .commentView .comments {
@@ -4429,11 +4507,11 @@ body #shopFilter .container .shopLeft .shopFilter h1 {
   border-bottom: 1px solid rgba(21, 27, 57, 0.04);
 }
 
-body #shopFilter .container .shopLeft .shopFilter .filterCategory {
+body #shopFilter .container .shopLeft .shopFilter .filterType {
   padding: 0px 0px 15px 10px;
 }
 
-body #shopFilter .container .shopLeft .shopFilter .filterCategory h2 {
+body #shopFilter .container .shopLeft .shopFilter .filterType h2 {
   font-size: 16px;
   letter-spacing: 0.25px;
   padding: 4px 0px;
@@ -4441,18 +4519,18 @@ body #shopFilter .container .shopLeft .shopFilter .filterCategory h2 {
   line-height: 1.2;
 }
 
-body #shopFilter .container .shopLeft .shopFilter .filterCategory form .form-check {
+body #shopFilter .container .shopLeft .shopFilter .filterType form .form-check {
   padding-top: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(21, 27, 57, 0.089);
 }
 
-body #shopFilter .container .shopLeft .shopFilter .filterCategory form .form-check input {
+body #shopFilter .container .shopLeft .shopFilter .filterType form .form-check input {
   font-weight: 500;
   border-radius: 0.25em;
 }
 
-body #shopFilter .container .shopLeft .shopFilter .filterCategory form .form-check label {
+body #shopFilter .container .shopLeft .shopFilter .filterType form .form-check label {
   color: #151b39;
   font-size: 13px;
   font-weight: 400;
@@ -4904,5 +4982,173 @@ body #shopFilter .shopRight .shopPagination nav ul {
 
 body #shopFilter .shopRight .shopPagination nav ul li a {
   padding: 10px 15px;
+}
+
+#aboutUs {
+  padding: 40px 0px;
+}
+
+#aboutUs .container .aboutImage .AboutImgBox {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#aboutUs .container .aboutImage .AboutImgBox img {
+  width: 100%;
+}
+
+#aboutUs .container .aboutUp {
+  text-align: center;
+}
+
+#aboutUs .container .aboutUp h1 {
+  color: #24aeb1;
+  font-size: 24px;
+  margin: 0 0 10px;
+  letter-spacing: .25px;
+  padding: 4px 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#aboutUs .container .aboutDown .aboutDownLeft {
+  border-right: 2px dotted black;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+#aboutUs .container .aboutDown .aboutDownLeft h1 {
+  font-size: 30px;
+  color: #151b39;
+  text-transform: uppercase;
+  letter-spacing: .25px;
+  padding-left: 60px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: right;
+}
+
+#aboutUs .container .aboutDown .aboutDownLeft h2 {
+  text-align: right;
+  padding-left: 80px;
+  font-size: 24px;
+  color: #151b39;
+  text-transform: uppercase;
+  letter-spacing: .25px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle {
+  padding-left: 10px;
+  border-right: 2px dotted black;
+  padding-right: 10px;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutUpText {
+  margin-bottom: 15px;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutUpText p {
+  font-size: 14px;
+  color: #151b39;
+  padding: 0 0 10px;
+  line-height: 1.5;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutConvenience {
+  position: relative;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutConvenience .aboutConvenienceImage img {
+  position: absolute;
+  top: 0;
+  left: -80px;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutConvenience h2 {
+  color: #02b7c2;
+  font-size: 18px;
+  margin: 29px 0 10px;
+  letter-spacing: .25px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutConvenience p {
+  margin-bottom: 12px;
+  color: #151b39;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutOneShop {
+  position: relative;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutOneShop .aboutOneShopImage img {
+  position: absolute;
+  top: 0;
+  left: -80px;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutOneShop h2 {
+  color: #02b7c2;
+  font-size: 18px;
+  margin: 29px 0 10px;
+  letter-spacing: .25px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutOneShop p {
+  margin-bottom: 12px;
+  color: #151b39;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutTrust {
+  position: relative;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutTrust .aboutTrustImage img {
+  position: absolute;
+  top: 0;
+  left: -80px;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutTrust h2 {
+  color: #02b7c2;
+  font-size: 18px;
+  margin: 29px 0 10px;
+  letter-spacing: .25px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#aboutUs .container .aboutDown .aboutDownMiddle .aboutTrust p {
+  margin-bottom: 12px;
+  color: #151b39;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+#aboutUs .container .aboutDown .aboutDownRight {
+  padding-left: 15px;
+}
+
+#aboutUs .container .aboutDown .aboutDownRight i {
+  color: #02b7c2;
+  font-size: 2em;
+  margin-bottom: 14px;
+}
+
+#aboutUs .container .aboutDown .aboutDownRight p {
+  font-size: 14px;
+  color: #58595b;
+  padding: 20px 28px;
+  line-height: 1.42857143;
 }
 /*# sourceMappingURL=style.css.map */

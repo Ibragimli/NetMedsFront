@@ -12,9 +12,12 @@
 
         .row {
             .navBox {
+
                 display: flex;
                 position: relative;
                 img {
+                cursor: pointer;
+
                     padding-right: 4px;
                 }
 
