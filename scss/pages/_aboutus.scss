@@ -5,8 +5,9 @@
         .aboutImage {
 
             .AboutImgBox {
-               text-align: center;
-               padding: 20px 0px;
+                text-align: center;
+                padding: 20px 0px;
+
                 img {
                     width: 100%;
                 }
@@ -30,9 +31,9 @@
 
         .aboutDown {
             .aboutDownLeft {
-                border-right: 2px dotted black;
                 padding-right: 15px;
                 padding-bottom: 10px;
+
                 h1 {
                     font-size: 30px;
                     color: #151b39;
@@ -59,13 +60,14 @@
 
             .aboutDownMiddle {
                 padding-left: 10px;
-                border-right: 2px dotted black;
+                border-right: 2px dotted #000000;
                 padding-right: 10px;
 
                 .aboutUpText {
                     margin-bottom: 15px;
-
                     p {
+                        padding-left: 10px !important;
+                        border-left: 2px dotted black;
                         font-size: 14px;
                         color: #151b39;
                         padding: 0 0 10px;

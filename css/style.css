@@ -843,251 +843,10 @@ table {
     height: 50px !important;
   }
   header .container-fluid .row .headUser {
-    padding-top: 20px;
-    padding-bottom: 15px;
     width: 100% !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
-  }
-  header .container-fluid .row .headUser ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .container-fluid .row .headUser ul li {
-    margin-left: 10px;
-  }
-  header .container-fluid .row .headUser ul li a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .container-fluid .row .headUser ul li a i {
-    color: white;
-    padding-right: 5px;
-  }
-  header .container-fluid .row .headUser ul li a img {
-    margin-right: 8px;
-    margin-left: 15px;
-  }
-  header .container-fluid .row .headUser ul li a span {
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-    padding-top: 3px;
-    letter-spacing: 1px;
-    color: white;
-    font-size: 14px;
-    font-stretch: normal;
-  }
-  header .container-fluid .row .headUser ul li a span:hover {
-    color: #CED0D1;
-  }
-  header .container-fluid .row .headUser ul li a .basketImage {
-    position: relative;
-  }
-  header .container-fluid .row .headUser ul li a .basketImage sub {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 6px;
-    background-color: #EE4380;
-    border-radius: 6.5px;
-    font-size: 12px;
-    color: white;
-    width: 17px;
-    height: 13px;
-    font-weight: 700;
-    font-family: 'Lato', sans-serif;
-  }
-  header .container-fluid .row .headUser ul li a .basketCart {
-    font-size: 13px;
-    font-weight: 700;
-  }
-  header .container-fluid .row .headUser ul .basketA {
-    position: relative;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketTriangle {
-    position: absolute;
-    top: 28px;
-    left: 20px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 14px solid white;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover {
-    border-radius: 5px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    padding: 20px;
-    padding: 20px 15px 25px 20px;
-    background-color: white;
-    position: absolute;
-    top: 42px;
-    left: -320px;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverUp {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 2px 0px 12px 0px;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverUp h2 {
-    font-weight: 700;
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: 1px;
-    color: #6f7284;
-    line-height: 18px;
-    height: 16px;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverUp span {
-    font-weight: 700;
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 16px;
-    letter-spacing: normal;
-    color: #151b39;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 2px 0px 7px 0px;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row {
-    padding: 0px;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row .itemBasket {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 11px;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row .itemBasket .basketName {
-    margin-right: 20px;
-    width: 65%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 14px;
-    color: #151b39;
-    font-weight: 700;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverMiddle .row .itemBasket .basketPriceCount {
-    font-weight: 500;
-    text-align: right;
-    font-size: 15px;
-    color: #151b39;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 10px 0px;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownLeft {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownLeft h3 {
-    font-size: 18px;
-    letter-spacing: .15px;
-    color: #ef4281;
-    margin-bottom: 2px;
-    font-weight: 700;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownLeft p {
-    font-weight: 700;
-    letter-spacing: .15px;
-    font-size: 15px;
-    color: #378f30;
-  }
-  header .container-fluid .row .headUser ul .basketA .basketHover .basketAHover .basketHoverDown .DownRight a {
-    padding: 3px 40px;
-    background-color: #24aeb1;
-    border-radius: 5px;
-    color: #fff;
-    line-height: 36px;
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    border: 0;
-    font-weight: 700;
-  }
-  header .container-fluid .row .headUser ul .basketA:hover .basketHover {
-    opacity: 1;
-    visibility: visible;
-  }
-  header .container-fluid .row .headUser ul .signInUp {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 2px;
-  }
-  header .container-fluid .row .headUser ul .signInUp img {
-    padding-left: 5px;
-    cursor: pointer;
-  }
-  header .container-fluid .row .headUser ul .signInUp ul li {
-    width: 60px;
-  }
-  header .container-fluid .row .headUser ul .signInUp ul li a span {
-    padding-top: 3px;
-    color: white;
-    font-size: 14px;
-    font-stretch: normal;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  header .container-fluid .row .headUser ul .signInUp ul li a .signIn::after {
-    content: '/';
-    padding-left: 5px;
-    color: white !important;
-  }
-  header .container-fluid .row .headUser ul .signInUp ul li a span:hover {
-    color: #CED0D1;
   }
 }
 
@@ -1300,29 +1059,41 @@ table {
   #aboutUs .container .aboutDown .aboutDownMiddle .aboutUpText {
     margin-bottom: 15px;
   }
+  #aboutUs .container .aboutDown .aboutDownMiddle .aboutUpText p {
+    border-left: 0px !important;
+  }
   #aboutUs .container .aboutDown .aboutDownMiddle .aboutConvenience {
     position: relative;
+  }
+  #aboutUs .container .aboutDown .aboutDownMiddle .aboutConvenience h2 {
+    padding-top: 60px;
   }
   #aboutUs .container .aboutDown .aboutDownMiddle .aboutConvenience .aboutConvenienceImage img {
     position: absolute;
     top: 0;
-    left: -50px !important;
+    left: 0px !important;
   }
   #aboutUs .container .aboutDown .aboutDownMiddle .aboutOneShop {
     position: relative;
   }
+  #aboutUs .container .aboutDown .aboutDownMiddle .aboutOneShop h2 {
+    padding-top: 60px;
+  }
   #aboutUs .container .aboutDown .aboutDownMiddle .aboutOneShop .aboutOneShopImage img {
     position: absolute;
     top: 0;
-    left: -50px !important;
+    left: 0px !important;
   }
   #aboutUs .container .aboutDown .aboutDownMiddle .aboutTrust {
     position: relative;
   }
+  #aboutUs .container .aboutDown .aboutDownMiddle .aboutTrust h2 {
+    padding-top: 60px;
+  }
   #aboutUs .container .aboutDown .aboutDownMiddle .aboutTrust .aboutTrustImage img {
     position: absolute;
     top: 0;
-    left: -50px !important;
+    left: 0px !important;
   }
 }
 
@@ -5012,7 +4783,6 @@ body #shopFilter .shopRight .shopPagination nav ul li a {
 }
 
 #aboutUs .container .aboutDown .aboutDownLeft {
-  border-right: 2px dotted black;
   padding-right: 15px;
   padding-bottom: 10px;
 }
@@ -5042,7 +4812,7 @@ body #shopFilter .shopRight .shopPagination nav ul li a {
 
 #aboutUs .container .aboutDown .aboutDownMiddle {
   padding-left: 10px;
-  border-right: 2px dotted black;
+  border-right: 2px dotted #000000;
   padding-right: 10px;
 }
 
@@ -5051,6 +4821,8 @@ body #shopFilter .shopRight .shopPagination nav ul li a {
 }
 
 #aboutUs .container .aboutDown .aboutDownMiddle .aboutUpText p {
+  padding-left: 10px !important;
+  border-left: 2px dotted black;
   font-size: 14px;
   color: #151b39;
   padding: 0 0 10px;
